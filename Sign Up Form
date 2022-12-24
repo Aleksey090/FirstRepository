@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" style="styles.css">
+    </head>
+      <body>
+
+        <div class="container">
+          <header>
+            <h1 id="title">SIGN UP</h1>
+            <p id="description">Fill out following fields, please.</p>
+          
+          </header>
+          <form id="survey-form">
+          
+            <div class="form-group">
+              <label id="name-label" for="name">Name</label>
+              <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name here" required>
+            </div>
+
+            <div class="form-group">
+              <label id="email-label" for="email">Email</label>
+              <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email here" required>
+            </div>
+
+            <div class="form-group">
+              <label id="number-label" for="number">Age</label>
+              <input type="number" name="age" id="number" class="form-control" placeholder="Enter your age here" required min="0" max="150">
+            </div>
+
+            <div class="form-group">
+              <p>Select your favorite genres</p>
+              <select id="dropdown" name="genres" class="form-control" required>
+                <option disabled selected value>Genres</option>
+                <option value="techno">Techno</option>
+                <option value="minimal">Minimal</option>
+                <option value="house">House</option>
+                <option value="bass music">Bass Music</option>
+                <option value="soul funk hip hop">Soul, Funk, Hip Hop</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <p>Do you prefer digital or analog?</p>
+
+                  <label><input 
+                          name="user-recommend"
+                          value="digital"
+                          type="radio"
+                          class="input-radio"/>
+                            Digital
+                  </label>
+
+                  <label><input
+                          name="user-recommend"
+                          value="analog"
+                          type="radio"
+                          class="input-radio"/>
+                            Analog
+                  </label>
+
+            <div class="form-group">
+              <p>What decades do you mostly like?</p>
+              <label>
+                <input
+                  name="prefer"
+                  value="80"
+                  type="checkbox"
+                  class="input-checkbox"/>
+              80`s
+                </label>
+              
+              <label>
+                <input
+                  name="prefer"
+                  value="90"
+                  type="checkbox"
+                  class="input-checkbox"/>
+              90`s
+                </label>
+              
+              <label>
+                <input
+                  name="prefer"
+                  value="00"
+                  type="checkbox"
+                  class="input-checkbox"/>
+              00`s
+                </label>
+
+              <label>
+                <input
+                  name="prefer"
+                  value="10"
+                  type="checkbox"
+                  class="input-checkbox"/>
+              10`s
+                </label>
+
+              <label>
+                <input
+                  name="prefer"
+                  value="20"
+                  type="checkbox"
+                  class="input-checkbox"/>
+              20`s
+                </label>
+
+              </div>
+        
+        
+        
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea 
+                    id="comments"
+                    class="input-textarea"
+                    name="comment"
+                    placeholder="Enter here...">
+          </textarea>
+          </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">Submit</button>
+
+
+            </form>
+          </div>
+        </body>
+  </html>
